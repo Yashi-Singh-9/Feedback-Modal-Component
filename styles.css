@@ -8,12 +8,12 @@ body {
     background-color: #d0cbf3;
 }
 
-.main-container{
+.main-container {
     background-color: #1a1832;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 6700px;
+    width: 100%; /* Adjust to fit smaller screens */
     max-width: 650px;
     position: relative;
     display: flex;
@@ -24,7 +24,6 @@ body {
 }
 
 /* close button */
-
 .close-button {
     color: #dadada;
     font-size: 40px;
@@ -36,7 +35,7 @@ body {
     width: 30px;
     height: 40px;
     display: flex;
-    cursor: pointer;
+    align-items: center; /* Align content vertically */
     border-radius: 5px;
 }
 
@@ -46,16 +45,13 @@ body {
     background-color: red;
     border-radius: 5px;
     width: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content horizontally */
 }
 
 /* heading */
-
-h2{
+h2 {
     color: #fff;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
     font-size: 24px;
     position: relative;
@@ -112,7 +108,7 @@ h2{
     color: #dadada;
     display: flex; /* Display the label on a new line */
     align-items: center; /* Align items vertically */
-    justify-content:space-between; /* Center items horizontally */
+    justify-content: space-between; /* Center items horizontally */
     margin-top: -60px; /* Add space between label lines */
     gap: 420px;
 }
@@ -132,11 +128,13 @@ h2{
 }
 
 /* Buttons */
-
 .buttons-container {
     margin-top: 50px; /* Add space above the buttons */
     margin-bottom: 20px;
     text-align: right; /* Align content to the right */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .cancel {
@@ -145,10 +143,10 @@ h2{
     background-color: #1a1832; /* Set background color */
     color: #ffffff; /* Set text color */
     padding: 10px 30px; /* Add padding */
-    font-size: 16px; /* Set font size */
+    font-size: 1rem; /* Set font size */
     cursor: pointer; /* Change cursor on hover */
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add smooth transitions */
-    margin-right: 330px; /* Add space between buttons */
+    margin-right: 20px; /* Add space between buttons */
     border-radius: 5px;
 }
 
@@ -157,9 +155,62 @@ h2{
     background-color: #7a58f4; /* Set background color */
     color: #ffffff; /* Set text color */
     padding: 10px 20px; /* Add padding */
-    font-size: 16px; /* Set font size */
+    font-size: 1rem; /* Set font size */
     cursor: pointer; /* Change cursor on hover */
     border: 1px solid #5640AB;
     border-radius: 5px;
 }
 
+.cancel:focus,
+.submit:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 680px) {
+    .main-container {
+        width: 90%; /* Adjust width to fit smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        top: 20px; /* Adjust positioning for smaller screens */
+    }
+
+    .rating-container {
+        flex-direction: column; /* Stack ratings vertically */
+        margin: 50px auto; /* Adjust margin for smaller screens */
+        gap: 15px;
+    }
+
+    .not-likely-label {
+        position: absolute;
+        top: 150px; /* Add margin to separate from rating numbers */
+        left: 100px;
+        font-size: 18px;
+    }
+
+    .likely-label {
+        position: absolute;
+        right: 80px;
+        bottom: 170px;
+        font-size: 18px;
+    }
+
+    .cancel {
+        margin-right: 0; /* Remove margin for smaller screens */
+        margin-bottom: 10px; /* Add margin below for spacing */
+    }
+
+    .buttons-container {
+        text-align: center; /* Center buttons on smaller screens */
+        margin-top: 30px; /* Adjust spacing for smaller screens */
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .submit {
+        margin-bottom: 10px; /* Add margin below for spacing */
+    }
+}
