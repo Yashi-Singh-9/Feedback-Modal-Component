@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #d0cbf3;
+}
+
+.main-container{
+    background-color: #1a1832;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 6700px;
+    max-width: 650px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* close button */
+
+.close-button {
+    color: #dadada;
+    font-size: 40px;
+    font-weight: normal;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 30px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* heading */
+
+h2{
+    color: #fff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 24px;
+    position: relative;
+    top: 45px;
+    width: 500px;
+}
+
+/* Rating Container */
+.rating-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 70px auto;
+}
+
+/* Rating Numbers Container */
+.rating-numbers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Individual Rating */
+.rating {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.rating-number {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #a8b3d5; /* Default border color */
+    border-radius: 5px; /* Added border-radius for square with rounded corners */
+    font-size: 22px;
+    color: #b1b9d8; /* Default number color */
+    margin: 0 3px; /* Added margin */
+    cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+/* Hover effect */
+.rating-number:hover {
+    border-color: #959BB9; /* Border color on hover */
+    color: #B1B9D8; /* Number color on hover */
+}
+
+/* Ratings Label */
+.rating-label {
+    color: #dadada;
+    display: flex; /* Display the label on a new line */
+    align-items: center; /* Align items vertically */
+    justify-content:space-between; /* Center items horizontally */
+    margin-top: -60px; /* Add space between label lines */
+    gap: 420px;
+}
+
+/* Not Likely Label */
+.not-likely-label {
+    flex: 1; /* Take up equal space */
+    text-align: center; /* Center the text */
+    font-size: 10px;
+}
+
+/* Extremely Likely Label */
+.likely-label {
+    flex: 1; /* Take up equal space */
+    text-align: center; /* Center the text */
+    font-size: 10px;
+}
+
+/* Buttons */
+
+.buttons-container {
+    margin-top: 50px; /* Add space above the buttons */
+    margin-bottom: 20px;
+    text-align: right; /* Align content to the right */
+}
+
+.cancel {
+    display: inline-block; /* Display cancel button as inline-block */
+    border: 1px solid #5640AB; /* Set border color */
+    background-color: #1a1832; /* Set background color */
+    color: #ffffff; /* Set text color */
+    padding: 10px 30px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add smooth transitions */
+    margin-right: 330px; /* Add space between buttons */
+    border-radius: 5px;
+}
+
+.submit {
+    display: inline-block; /* Display submit button as inline-block */
+    background-color: #7a58f4; /* Set background color */
+    color: #ffffff; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor on hover */
+    border: 1px solid #5640AB;
+    border-radius: 5px;
+}
+
