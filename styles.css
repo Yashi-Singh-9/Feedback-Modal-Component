@@ -172,31 +172,41 @@ h2 {
     .main-container {
         width: 90%; /* Adjust width to fit smaller screens */
         padding: 15px; /* Adjust padding for smaller screens */
+        position: relative; /* Ensure labels position relative to the container */
+        overflow: hidden; /* Prevent overflow issues */
+        box-sizing: border-box; /* Include padding in the width */
     }
 
     h2 {
-        font-size: 20px; /* Adjust font size for smaller screens */
-        top: 20px; /* Adjust positioning for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin: 20px 0; /* Adjust top and bottom margin for better spacing */
+        word-wrap: break-word; /* Ensure long text breaks correctly */
+        white-space: normal; /* Allow the text to wrap to the next line */
+        text-align: center; /* Center the heading text */
+        width: 100%; /* Make sure it takes full width of the container */
+        padding: 0 10px; /* Add padding to ensure no text is cut off */
+        box-sizing: border-box; /* Ensure padding is included in the width */
     }
 
     .rating-container {
         flex-direction: column; /* Stack ratings vertically */
         margin: 50px auto; /* Adjust margin for smaller screens */
         gap: 15px;
+        position: relative; /* Ensure labels position relative to the container */
     }
 
     .not-likely-label {
         position: absolute;
-        top: 150px; /* Add margin to separate from rating numbers */
-        left: 100px;
-        font-size: 18px;
+        top: 160px; /* Adjust positioning to avoid overlapping */
+        left: 20px; /* Adjust left to ensure it doesn't overlap */
+        font-size: 12px;
     }
 
     .likely-label {
         position: absolute;
-        right: 80px;
-        bottom: 170px;
-        font-size: 18px;
+        bottom: 170px; /* Adjust positioning to avoid overlapping */
+        right: 20px; /* Adjust right to ensure it doesn't overlap */
+        font-size: 12px;
     }
 
     .cancel {
