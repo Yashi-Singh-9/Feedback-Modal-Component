@@ -10,11 +10,11 @@ In this frontend challenge, you'll build a Feedback Modal Component. This challe
 Consider enhancing your project with advanced CSS techniques or by exploring CSS frameworks like Bootstrap or Bulma. Additionally, you can experiment with basic JavaScript to add interactivity to your modal component.
 
 <h1>Installation Steps</h1>
-1. Clone the repository.
+1. Clone the repository. <br>
 2. Open index.html in your web browser to view the menu.
 
 <h1>Tech Stack</h1>
-- HTML
+- HTML <br>
 - CSS
 
 <h1>Prerequisites</h1>
