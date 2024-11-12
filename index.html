@@ -5,62 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Modal Component</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Main Container -->
-    <div class="main-container" role="dialog" aria-labelledby="feedback-time">
-        <!-- Close Button -->
-        <span class="close-button" aria-labelledby="Close">&times;</span>
-        <!-- Heading -->
-        <h2 id="feedback-title">How likely are you to recommend FrontendPro to someone you know?</h2>
-        <!-- Rating Starting from 1 to 10 -->
-        <div class="rating-container" aria-labelledby="feedback-rating">
-            <div class="rating">
-                <span class="rating-number">1</span>
+  <!-- Modal HTML Structure -->
+    <div id="ratingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn"><i class="fa-solid fa-xmark"></i></span>
+            <h2>How likely are you to recommend FrontendPro to someone you know?</h2>
+            <div class="rating-container">
+                <button class="rating-btn" data-value="1">1</button>
+                <button class="rating-btn" data-value="2">2</button>
+                <button class="rating-btn" data-value="3">3</button>
+                <button class="rating-btn" data-value="4">4</button>
+                <button class="rating-btn" data-value="5">5</button>
+                <button class="rating-btn" data-value="6">6</button>
+                <button class="rating-btn" data-value="7">7</button>
+                <button class="rating-btn" data-value="8">8</button>
+                <button class="rating-btn" data-value="9">9</button>
+                <button class="rating-btn" data-value="10">10</button>
             </div>
-            <div class="rating">
-                <span class="rating-number">2</span>
+
+            <div class="rating-feedback">
+                <p>Not likely at all</p>
+                <p>Extremely Likely</p>
             </div>
-            <div class="rating">
-                <span class="rating-number">3</span>
+            <!-- Area to display dynamic messages -->
+            <div id="message"></div>
+
+            <div class="feedback-btn">
+                <button id="cancelBtn" class="cancel-btn">Cancel</button>
+                <button id="submitBtn" class="submit-btn">Submit</button>
             </div>
-            <div class="rating">
-                <span class="rating-number">4</span>
-            </div>
-            <div class="rating">
-                <span class="rating-number">5</span>
-            </div>
-            <div class="rating">
-                <span class="rating-number">6</span>
-            </div>
-            <div class="rating">
-                <span class="rating-number">7</span>
-            </div>
-            <div class="rating">
-                <span class="rating-number">8</span>
-            </div>
-            <div class="rating">
-                <span class="rating-number">9</span>
-            </div>
-            <div class="rating">
-                <span class="rating-number">10</span>
-            </div>
-        </div>
-        <!-- Ratings Label -->
-        <div class="rating-label">
-            <div class="label-line">
-                <span class="not-likely-label">Not Likely at all</span>
-            </div>
-            <!-- Added extra space for the Extremely Likely label -->
-            <div class="label-line" style="margin-left: 65px;">
-                <span class="likely-label">Extremely Likely</span>
-            </div>
-        </div>
-        <!-- Button Container -->
-        <div class="buttons-container">
-            <button class="cancel">Cancel</button>
-            <button class="submit">Submit</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
