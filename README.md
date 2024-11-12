@@ -25,11 +25,16 @@ Before installation, please make sure you have already installed the following t
 <h1>Preview</h1>
 ![Project Preview](preview.png)
 
+<h1>Live Demo</h1>
+
+Do check out the Live Demo of [Feedback Modal Component](https://feedback-modal-component-by-yashi.netlify.app)
+
 <h1>Project Structure</h1>
 The project structure is organized as follows:
 
 - index.html
 - styles.css
+- script.js
 
 <h1>Contributing</h1>
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
