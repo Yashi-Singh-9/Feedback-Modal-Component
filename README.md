@@ -15,7 +15,8 @@ Consider enhancing your project with advanced CSS techniques or by exploring CSS
 
 <h1>Tech Stack</h1>
 - HTML <br>
-- CSS
+- CSS <br>
+- JavaScript
 
 <h1>Prerequisites</h1>
 Before installation, please make sure you have already installed the following tools:
