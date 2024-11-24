@@ -24,6 +24,7 @@ Before installation, please make sure you have already installed the following t
 - Web browser (e.g., Chrome, Firefox, Edge)
 
 <h1>Preview</h1>
+
 ![Project Preview](preview.png)
 
 <h1>Live Demo</h1>
@@ -47,4 +48,5 @@ Contributions are what make the open-source community such an amazing place to l
 - Open a Pull Request
 
 <h1>Resources</h1>
+
 [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
